@@ -46,4 +46,18 @@ $(document).ready(function () {
         // // appendArrows: $('.content'),  //створили якийсь контейнер з класом content ы перенесли туди стрылки управлыння
         // // appendDots: $('.content'),  //створили якийсь контейнер з класом content ы перенесли туди кругленькі кнопочки управлыння
     });
+    // $('.slider2').slick({
+    //     // arrows: true,
+    //     adaptiveHeight: true,
+    //     slidesToShow: 1.08,
+    // });
+    $('.slider2').slick({
+        // dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        centerMode: true,
+        variableWidth: true
+    });
+
 });
