@@ -6,7 +6,7 @@
 }
 .banner {
     background: url("../img/hero-bg.png") 0 0/cover no-repeat;
-    /*text-align: center;*/
+    text-align: center;
 }
 
 .slider__item{
@@ -60,12 +60,7 @@
     /*background-image: var(--blue-gradient);*/
     color: #fff;
 }
-@media (max-width: 991px){
-    .btn {
-        font-size: 16px;
-        line-height: 20px;
-    }
-}
+
 .btn {
     position: relative;
     flex-shrink: 0;
@@ -90,5 +85,11 @@
     user-select: none;
     cursor: pointer;
     transition: color var(--base-transition), border-color var(--base-transition), background-color var(--base-transition);
-
+    margin-bottom: 30px;
+}
+@media (max-width: 991px){
+    .btn {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
