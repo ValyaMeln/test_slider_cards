@@ -178,9 +178,15 @@ html, body {
     }
 
 }
-
+@media screen and (max-width: 750px) {
+    .banner {
+        background: url("../img/hero-bg-750.png") 100% no-repeat;
+        color: blueviolet;
+    }
+}
 @media screen and (max-width: 576px) {
     .banner {
+        background: url("../img/hero-bg-320.png") 50%/cover no-repeat;
         text-align: center;
         color: red;
     }
