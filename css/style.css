@@ -42,13 +42,19 @@ html, body {
     left: 0;
     z-index: -1;
 }
+
 .hero__title {
     padding-top: 150px;
+}
+small{
+    display: block;
+    margin-top: 10px;
 }
 .slider2 .slider2__item {
     border: 1px solid black;
     margin-left: 10px;
 }
+
 @media (min-width: 1200px) {
     .hero__bg-1 {
         /*display: block;*/
@@ -103,7 +109,6 @@ html, body {
     /*.hero__bg-1 {*/
     /*    display: block;*/
     /*}*/
-
     .hero__bg-2 {
         display: none;
 
@@ -113,6 +118,7 @@ html, body {
         display: none;
     }
 }
+
 @media (max-width: 800px) {
     .hero__bg-1 {
         display: none;
@@ -121,25 +127,35 @@ html, body {
     .hero__bg-2 {
         display: block;
     }
+
     .hero__bg-3 {
         display: none;
     }
 }
+
 @media (max-width: 540px) {
-    .container{
+    .container {
         padding-left: 0;
         padding-right: 0;
     }
-    .wrapper3{
+
+    .wrapper3 {
         display: block;
         padding: 0;
     }
-    .banner3{
+
+    .banner3 {
         text-align: center;
     }
-    .hero__title{
+
+    .hero__title {
         padding-top: 20px;
     }
+
+    .hero__bg img {
+        height: 100%;
+    }
+
     .hero__bg-1 {
         display: none;
     }
@@ -147,16 +163,20 @@ html, body {
     .hero__bg-2 {
         display: none;
     }
+
     .hero__bg-3 {
         display: block;
     }
+
     .slider2 .slick-arrow.slick-prev {
         left: 15px;
     }
+
     .slider2 .slick-arrow.slick-next {
         right: 15px;
     }
 }
+
 /*.banner {*/
 /*    background: url("../img/hero-bg.png") 0 0/cover no-repeat;*/
 /*    text-align: start;*/
