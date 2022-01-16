@@ -8,35 +8,125 @@
 /*Стили для демонстрации*/
 html, body {
     height: 100%;
-    background-color: darkturquoise;
+    /*background-color: darkturquoise;*/
     font-family: Arial, sans-serif;
     /*color: white;*/
     /*font-size: 25px;*/
 }
 
 .wrapper3 {
-   display: none;
-    /*height: 90%;*/
-    padding: 25px;
-}
-.wrapper2 {
+    display: none;
     /*height: 90%;*/
     padding: 25px;
 }
 
+/*.wrapper2 {*/
+/*    !*height: 90%;*!*/
+/*    padding: 25px;*/
+/*}*/
+
+.banner3 {
+    position: relative;
+    padding-bottom: 30px;
+}
+.slider2 .slider2__item {
+    border: 1px solid black;
+    margin-left: 10px;
+}
+.hero__bg {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+
+}
+
+.hero__bg img {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    z-index: -1;
+}
+
+@media (min-width: 1200px) {
+    .hero__bg-1 {
+        /*display: block;*/
+    }
+
+    .hero__bg-2 {
+        display: none;
+
+    }
+
+    .hero__bg-3 {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .hero__bg-1 {
+        /*display: block;*/
+    }
+
+    .hero__bg-2 {
+        display: none;
+
+    }
+
+    .hero__bg-3 {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero__bg-1 {
+        display: none;
+    }
+
+    .hero__bg-2 {
+        display: block;
+    }
+    .hero__bg-3 {
+        display: none;
+    }
+}
+@media (max-width: 540px) {
+    .wrapper3{
+        display: block;
+        padding: 0;
+    }
+    .banner3{
+        text-align: center;
+    }
+    .hero__title{
+        padding-top: 20px;
+    }
+    .hero__bg-1 {
+        display: none;
+    }
+
+    .hero__bg-2 {
+        display: none;
+    }
+    .hero__bg-3 {
+        display: block;
+    }
+
+}
 
 .slider2 {
-    /*display: none;*/
     position: relative;
-    /*padding: 0 20px;*/
 }
-.slider2 .slick-list{
+
+.slider2 .slick-list {
     overflow: hidden;
 }
+
 .slider2 .slick-arrow {
     position: absolute;
     top: 50%;
-    margin: -30px 0 0 0 ;
+    margin: -30px 0 0 0;
     z-index: 10;
     font-size: 0;
     width: 30px;
@@ -72,7 +162,7 @@ html, body {
 /*.wrapper{*/
 /*    display: none;*/
 /*}*/
-.slider .slider__item {
+.slider2 .slider2__item {
     border: 1px solid black;
     margin-left: 10px;
 }
@@ -156,58 +246,82 @@ html, body {
     margin-top: 30px;
 }
 
-@media screen and (max-width: 1200px) {
-    .banner {
-        background: url("../img/hero-bg-v22.png") 0 0/cover no-repeat;
-    }
+/*@media screen and (max-width: 1200px) {*/
+/*    .banner {*/
+/*        background: url("../img/hero-bg-v22.png") 0 0/cover no-repeat;*/
+/*    }*/
 
-}
+/*    .banner2 {*/
+/*        background: url("../img/hero-bg-v22.png") 0 0/cover no-repeat;*/
+/*    }*/
 
-@media screen and (max-width: 991px) {
-    .btn {
-        font-size: 16px;
-        line-height: 20px;
-    }
+/*}*/
 
-    .banner {
-        background: url("../img/hero-bg-v23.png") 0 0/cover no-repeat;
-        /*text-align: center;*/
-    }
-    .hero__title{
-        /*color: red;*/
-    }
+/*@media screen and (max-width: 991px) {*/
+/*    .btn {*/
+/*        font-size: 16px;*/
+/*        line-height: 20px;*/
+/*    }*/
 
-}
-@media screen and (max-width: 750px) {
-    .banner {
-        background: url("../img/hero-bg-750.png") 100% no-repeat;
-        color: blueviolet;
-    }
-}
-@media screen and (max-width: 576px) {
-    .banner {
-        background: url("../img/hero-bg-320.png") 50%/cover no-repeat;
-        text-align: center;
-        color: red;
-    }
+/*    .banner {*/
+/*        background: url("../img/hero-bg-v23.png") 0 0/cover no-repeat;*/
+/*        !*text-align: center;*!*/
+/*    }*/
 
-    .wrapper3 {
-        display: block;
-    }
+/*    .banner2 {*/
+/*        background: url("../img/hero-bg-v23.png") 0 0/cover no-repeat;*/
 
-    img {
-        max-width: 220px;
-        border: 1px solid red;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .slider2 .slick-arrow.slick-next {
-        right: -20px;
-    }
-    .slider2 .slick-arrow.slick-prev {
-       left: -20px;
-    }
+/*    }*/
+
+/*    .hero__title {*/
+/*        !*color: red;*!*/
+/*    }*/
+
+/*}*/
+
+/*@media screen and (max-width: 750px) {*/
+/*    .banner {*/
+/*        background: url("../img/hero-bg-750.png") 100% no-repeat;*/
+/*        color: blueviolet;*/
+/*    }*/
+
+/*    .banner2 {*/
+/*        background: url("../img/hero-bg-750.png") 100% no-repeat;*/
+/*        color: blueviolet;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 576px) {*/
+/*    .banner {*/
+/*        background: url("../img/hero-bg-320.png") 50%/cover no-repeat;*/
+/*        text-align: center;*/
+/*        color: red;*/
+/*    }*/
+
+/*    .wrapper3 {*/
+/*        display: block;*/
+/*    }*/
+
+/*    img {*/
+/*        max-width: 220px;*/
+/*        border: 1px solid red;*/
+/*        margin-left: 5px;*/
+/*        margin-right: 5px;*/
+/*    }*/
+
+/*    .slider2 .slick-arrow.slick-next {*/
+/*        right: -20px;*/
+/*    }*/
+
+/*    .slider2 .slick-arrow.slick-prev {*/
+/*        left: -20px;*/
+/*    }*/
 
 
-}
+/*}*/
 
+/*@media screen and (max-width: 576px) {*/
+/*    !*.banner2 {*!*/
+/*    !*    background: url("../img/hero-bg-v2 (6).png")0 0/cover no-repeat;*!*/
+/*    !*}*!*/
+/*}*/
